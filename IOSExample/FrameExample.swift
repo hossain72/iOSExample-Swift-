@@ -12,6 +12,11 @@ struct FrameExample :View {
         Text("Hello World")
             .background(.red)
 //            .frame(width: 300, height: 200, alignment: .center)
+            .frame(
+                maxWidth: .infinity,
+                minHeight: .infinity,
+                alignment: .center
+            )
             .background(.green)
     }
 }
